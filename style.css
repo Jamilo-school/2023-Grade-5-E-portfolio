@@ -71,6 +71,10 @@ main{
 
  
 }
+.examgridcontact-info{
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+}
 p#nav.text:hover{
   color: red;
   box-shadow: 3px 3px 3px red;
@@ -145,7 +149,7 @@ a{
 }
 
 #mrks{
-  border: solid #fafafa;
+  border: 3px solid #fafafa;
   background-color:transparent;
   color: red;
   padding:8px;
@@ -155,6 +159,7 @@ a{
 
 #titledownloads{
   text-align: center;
+  border: none;
 }
 .cbctitle{
   z-index: 1000;
@@ -234,6 +239,7 @@ width:120px;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   font-weight: bold;
+  
 
 }
   h4{

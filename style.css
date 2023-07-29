@@ -351,6 +351,7 @@ form {
 .input-container {
   position: relative;
   margin: 1rem 0;
+  font-weight: bold;
   
   
 }
@@ -370,7 +371,7 @@ form {
 .input {
   width: 100%;
   outline: none;
-  border: 2px solid #fafafa;
+  border: 8px solid #fafafa;
   background: none;
   padding: 0.6rem 1.2rem;
   background: linear-gradient(45deg,#0de5da,#5b0e43,#c2b41b,#000000);
@@ -382,6 +383,8 @@ form {
   letter-spacing: 0.5px;
   border-radius: 25px;
   transition: 0.3s;
+  font-weight: bold;
+
 }
 
 textarea.input {
@@ -390,18 +393,19 @@ textarea.input {
   border-radius: 22px;
   resize: none;
   overflow-y: auto;
+ 
 }
 
 .input-container label {
   position: absolute;
   top: 50%;
+  font-weight: bold;
   left: 15px;
   transform: translateY(-50%);
   padding: 0 0.4rem;
   background: linear-gradient(45deg,#0de5da,#5b0e43,#c2b41b,#000000);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  font-weight: bold;
   font-size: 0.9rem;
   font-weight: 400;
   pointer-events: none;
@@ -409,9 +413,11 @@ textarea.input {
   transition: 0.5s;
 }
 
+
 .input-container.textarea label {
   top: 1rem;
   transform: translateY(0);
+  font-weight: bold;
 }
 
 .btn {
@@ -478,7 +484,10 @@ textarea.input {
   opacity: 0;
   transition: 0.3s;
   height: 5px;
-  background-color: #1abc9c;
+  background: linear-gradient(45deg,#0de5da,#5b0e43,#c2b41b,#000000);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: bold;
   top: 50%;
   transform: translateY(-50%);
 }

@@ -125,6 +125,7 @@ a{
   width: 30%;
   float: right;
   border: 3px solid rgb(231, 220, 127);
+  border-radius: 10px;
 }
 .container {
   position: relative;
@@ -185,13 +186,21 @@ a{
   
 }
 #footer{
-  color: #fafafafa;
-  text-align: right;
+  background: linear-gradient(45deg,#e8fffe,#df9233,#5a5625,#000000);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: bold;
+  text-align: center;
+
   
   
 }
 #developer{
-  margin-left: 40px;
+  margin-left: 9px;
+  background: linear-gradient(45deg,#e8fffe,#df33a8,#5a5625,#000000);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: bold;
 }
 .footer{
   margin-right: 80px;
@@ -1061,9 +1070,7 @@ textarea.input {
 .navbar.active{
   left: 0;
 }
-.nav-menu{
-  
-}
+
 #barger2right{
   display: block;
   position: absolute;

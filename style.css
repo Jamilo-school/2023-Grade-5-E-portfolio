@@ -290,20 +290,22 @@ width:120px;
 }
 
 .contact-form {
-  background-color: #1abc9c;
+  background-color: #fff;
   position: relative;
 }
 
 .circle {
   border-radius: 50%;
-  background: linear-gradient(135deg, transparent 20%, #149279);
+  background: linear-gradient(135deg, transparent 20%, #d6dbda);
   position: absolute;
+  box-shadow: 0 0 20px 1px rgba(0, 0, 0, 0.1);
+ 
 }
 
 .circle.one {
-  width: 130px;
+  width: 140px;
   height: 130px;
-  top: 130px;
+  top: 180px;
   right: -40px;
 }
 
@@ -972,12 +974,14 @@ textarea.input {
 
 @media (max-width: 480px) {
    /* navbar */
-   .nav-menu{
+   .nav-menu,.examgridcontact-info{
     display: grid;
     grid-template-columns: repeat(2,1fr);
     
     
-  }.QRCODE{
+  }
+  
+  .QRCODE{
     width: 40%;
     height: 10%;
     float: right;

@@ -335,7 +335,10 @@ form {
 }
 
 .title {
-  color: #fff;
+  background: linear-gradient(45deg,#0de5da,#5b0e43,#c2b41b,#000000);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: bold;
   font-weight: 500;
   font-size: 2rem;
   line-height: 1;
@@ -370,7 +373,10 @@ form {
   border: 2px solid #fafafa;
   background: none;
   padding: 0.6rem 1.2rem;
-  color: #fff;
+  background: linear-gradient(45deg,#0de5da,#5b0e43,#c2b41b,#000000);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: bold;
   font-weight: 500;
   font-size: 0.95rem;
   letter-spacing: 0.5px;
@@ -392,7 +398,10 @@ textarea.input {
   left: 15px;
   transform: translateY(-50%);
   padding: 0 0.4rem;
-  color: #fafafa;
+  background: linear-gradient(45deg,#0de5da,#5b0e43,#c2b41b,#000000);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: bold;
   font-size: 0.9rem;
   font-weight: 400;
   pointer-events: none;
@@ -410,7 +419,10 @@ textarea.input {
   background-color: #fff;
   border: 2px solid #fafafa;
   font-size: 0.95rem;
-  color: #1abc9c;
+  background: linear-gradient(45deg,#0de5da,#5b0e43,#c2b41b,#000000);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: bold;
   line-height: 1;
   border-radius: 25px;
   outline: none;
@@ -424,7 +436,10 @@ textarea.input {
   background-color: #fff;
   border: 2px solid #fafafa;
   font-size: 15px;
-  color: #1abc9c;
+  background: linear-gradient(45deg,#0de5da,#5b0e43,#c2b41b,#000000);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: bold;
   line-height: 1;
   width: 135px;
   border-radius: 25px;
@@ -436,7 +451,10 @@ textarea.input {
 
 .btn:hover {
   background-color: transparent;
-  color: #fff;
+  background: linear-gradient(45deg,#0de5da,#5b0e43,#c2b41b,#000000);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: bold;
 }
 
 .input-container span {

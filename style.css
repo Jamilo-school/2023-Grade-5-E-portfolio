@@ -383,9 +383,7 @@ form {
   border: 8px solid #fafafa;
   background: none;
   padding: 0.6rem 1.2rem;
-  background: linear-gradient(45deg,#0de5da,#5b0e43,#c2b41b,#000000);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  color: #b0adad;
   font-weight: bold;
   font-weight: 500;
   font-size: 0.95rem;
@@ -393,6 +391,7 @@ form {
   border-radius: 25px;
   transition: 0.3s;
   font-weight: bold;
+ 
 
 }
 
@@ -862,7 +861,7 @@ textarea.input {
   width: 100%;
   border-radius: 12px;
  
-}
+
 
 
 /* //////////////////////////////// */

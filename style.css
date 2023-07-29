@@ -838,6 +838,11 @@ textarea.input {
     display: grid;
     grid-template-columns: repeat(3,1fr);
   }
+  .examgridcontact-info{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+
+  }
   
   .navbar{
     margin: auto;

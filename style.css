@@ -1020,6 +1020,11 @@ textarea.input {
     grid-template-columns: repeat(2,1fr);
     
     
+  }.schoollogo{
+    width: 40%;
+    position: relative;
+    float: left;
+  
   }
   
   .QRCODE{

@@ -21,8 +21,13 @@ main{
   width: 15%;
 
 }
-
-.navbar{
+h3.title{
+  font-size: 20px;
+  border: none;
+}
+.header{
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
   display: flex;
   justify-content: space-between;
   width: 100%;
@@ -1136,6 +1141,7 @@ textarea.input {
 
   
   }
+  
   .cbctitle{
     position: absolute;
     font-size: 20px;

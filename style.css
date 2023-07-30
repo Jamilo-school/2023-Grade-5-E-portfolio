@@ -654,6 +654,7 @@ textarea.input {
   
  
 }
+
 .popup2 {
   display: none;
   position: fixed;
@@ -748,7 +749,7 @@ textarea.input {
   grid-template-columns: repeat(2,1fr);
   margin: 30px;
   top: 23px;
-  padding: 40px;
+  padding: 10px;
   width: 100%;
   max-width: 1200px;
   background-color: #fff;

@@ -299,8 +299,9 @@ width:120px;
   right: 78px;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  z-index: 1000;
+ 
 }
+
 
 .contact-form {
   background-color: #fff;
@@ -614,6 +615,7 @@ textarea.input {
   bottom: -77px;
   right: 50px;
   opacity: 0.3;
+ 
 }
 
 .big-circle {
@@ -1073,7 +1075,7 @@ textarea.input {
 
   
   .hamburger{
-    display: block;
+    display: none;
     position: absolute;
     position: fixed;
     right: 13px;
@@ -1181,7 +1183,7 @@ textarea.input {
     width: 105px;
   }
   .nametags{
-    font-size: 10px;
+    font-size: 15px;
   }
     
 

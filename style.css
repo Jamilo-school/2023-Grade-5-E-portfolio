@@ -296,6 +296,7 @@ width:120px;
   right: 78px;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
+  z-index: 1000;
 }
 
 .contact-form {
@@ -996,6 +997,7 @@ textarea.input {
     bottom: 75%;
     transform: scale(0.9) translate(-40%, 30%);
     right: 50%;
+  
   }
 
   .text {
@@ -1042,9 +1044,7 @@ textarea.input {
     border: 3px solid rgb(231, 220, 127);
   }
 
-  .form.one{
-    z-index: -1000;
-  }
+  
   .hamburger{
     display: block;
     position: absolute;

@@ -342,6 +342,15 @@ form {
   overflow: hidden;
   position: relative;
 }
+.formselection{
+  border: 4px solid #fafafa;
+  max-width: 40%;
+   width: 100%;
+    border-radius: 6px;
+    height: 30px;
+    color: turquoise;
+    font-weight: bold;
+}
 
 .title {
   background: linear-gradient(45deg,#0de5da,#5b0e43,#c2b41b,#000000);

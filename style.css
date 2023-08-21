@@ -117,11 +117,19 @@ p#nav.text:hover{
 
 /* navbar  ends*/
 p{
-  color: #1abc9c;
+ 
+  color: rgb(194, 195, 194);
+  font-weight: bold;
+
+
+  
+
+  
 }
 a{
   text-decoration: none;
   color: #1abc9c;
+  
   
 }
 .QRCODE{
@@ -200,7 +208,7 @@ a{
 }
 #developer{
   margin-left: 9px;
-  background: linear-gradient(45deg,#e8fffe,#df33a8,#5a5625,#000000);
+  background: linear-gradient(45deg,#0de5da,#5b0e43,#c2b41b,#000000);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   font-weight: bold;
@@ -556,7 +564,7 @@ textarea.input {
   font-weight: 400px;
   font-size: 1.3rem;
   margin: 1.5rem 0 2rem 0;
-  background: linear-gradient(45deg,#3059b3,#ff77cd,#6a5863,#ff77cd,#200617);
+  background: linear-gradient(45deg,#0de5da,#5b0e43,#c2b41b,#000000);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   text-align: center;
@@ -738,7 +746,7 @@ textarea.input {
   cursor: pointer;
   transition: 0.3s;
   margin: 3px;
-   background: linear-gradient(45deg,#3059b3,#ff77cd,#6a5863,#ff77cd,#200617);
+  background: linear-gradient(45deg,#0de5da,#5b0e43,#c2b41b,#000000);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   text-align: center;

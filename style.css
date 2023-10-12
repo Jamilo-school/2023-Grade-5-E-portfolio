@@ -310,12 +310,10 @@ width:120px;
  
 }
 
-
 .contact-form {
   background-color: #fff;
   position: relative;
 }
-
 .circle {
   border-radius: 50%;
   background: linear-gradient(135deg, transparent 20%, #d6dbda);

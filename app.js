@@ -64,3 +64,55 @@ document.querySelectorAll(".link1","link2","link3","link4").forEach(n => n.
   });
 
 
+  document.addEventListener("DOMContentLoaded", function () {
+    const downloadLinks = document.querySelectorAll(".download-link");
+    const downloadPopup = document.getElementById("downloadPopup");
+    const progressBar = document.getElementById("progressBar");
+    const progressText = document.getElementById("progressText");
+    const filenameText = document.getElementById("filename");
+
+    downloadLinks.forEach((link) => {
+        link.addEventListener("click", function (event) {
+            event.preventDefault();
+            const fileUrl = this.getAttribute("href");
+            const fileName = this.getAttribute("data-filename");
+
+            // Show the popup
+            downloadPopup.style.display = "block";
+            filenameText.innerText = fileName; // Set the filename in the popup
+
+            // Simulate a file download (replace with actual download logic)
+            const totalFileSize = 1024 * 1024; // Total file size in bytes
+            let downloadedFileSize = 0; // Initially, no data downloaded
+
+            const downloadInterval = setInterval(function () {
+                downloadedFileSize += 1024; // Simulate downloading 1KB of data
+
+                // Update the progress bar and text
+                const progressPercentage = (downloadedFileSize / totalFileSize) * 100;
+                progressBar.style.width = progressPercentage + "%";
+                progressText.innerText = progressPercentage.toFixed(1) + "%";
+
+                if (downloadedFileSize >= totalFileSize) {
+                    clearInterval(downloadInterval);
+                    progressText.innerText = "100%";
+
+                    // Initiate the download (replace with your file path)
+                    const anchor = document.createElement("a");
+                    anchor.href = fileUrl;
+                    anchor.download = fileName; // Set the download file name
+                    anchor.style.display = "none";
+                    document.body.appendChild(anchor);
+                    anchor.click();
+                    document.body.removeChild(anchor);
+
+                    // Hide the popup after a delay (e.g., 2 seconds)
+                    setTimeout(function () {
+                        downloadPopup.style.display = "none";
+                    }, 200);
+                }
+            }, 1); // Simulate progress update every 0.5 seconds
+        });
+    });
+});
+

@@ -896,6 +896,42 @@ textarea.input {
 /* //////////////////////////////// */
 
 
+
+
+    /* CSS for the popup */
+    .downloadingpopup {
+      display: none;
+      border-radius: 20px;
+      position: fixed;
+      color: #fff;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      padding: 20px;
+      background: #140aa0;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+      z-index: 9999;
+  }
+
+  /* CSS for the progress bar */
+  .progress-container {
+      background-color: #f0f0f0;
+      border: 1px solid #ccc;
+      height: 20px;
+      width: 100%;
+      position: relative;
+      margin-top: 10px;
+  }
+
+  .progress-bar {
+      height: 100%;
+      background-color: #4caf50;
+      width: 0;
+  }
+
+
+
+
 @media (max-width: 850px) {
   /* navbar */
   .nav-menu{

@@ -51,4 +51,16 @@ document.querySelectorAll(".link1","link2","link3","link4").forEach(n => n.
 
    }))
 
+   document.addEventListener("DOMContentLoaded", function () {
+    const audio = new Audio("./Audio/success.mp3"); // Replace with the path to your sound file
+
+    const links = document.querySelectorAll("a[href]");
+
+    links.forEach((link) => {
+      link.addEventListener("click", function (event) {
+        audio.play();
+      });
+    });
+  });
+
 

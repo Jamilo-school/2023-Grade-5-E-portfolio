@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        /* CSS for the popup */
+        .popup {
+            display: none;
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            padding: 20px;
+            background: white;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+            z-index: 9999;
+        }
+
+        /* CSS for the progress bar */
+        .progress-container {
+            background-color: #f0f0f0;
+            border: 1px solid #ccc;
+            height: 20px;
+            width: 100%;
+            position: relative;
+            margin-top: 10px;
+        }
+
+        .progress-bar {
+            height: 100%;
+            background-color: #4caf50;
+            width: 0;
+        }
+    </style>
+</head>
+<body>
+    <a href="/img/file1.zip" class="download-link" data-filename="onkey">Download File 1</a>
+    <a href="/Audio/success.mp3" class="download-link" data-filename="aoa">Download File 2</a>
+    <!-- Add more links as needed -->
+
+    <div class="popup" id="downloadPopup">
+        <p>Downloading... <span id="progressText">0%</span> (<span id="filename">Filename</span>)</p>
+        <div class="progress-container">
+            <div class="progress-bar" id="progressBar"></div>
+        </div>
+    </div>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const downloadLinks = document.querySelectorAll(".download-link");
+            const downloadPopup = document.getElementById("downloadPopup");
+            const progressBar = document.getElementById("progressBar");
+            const progressText = document.getElementById("progressText");
+            const filenameText = document.getElementById("filename");
+
+            downloadLinks.forEach((link) => {
+                link.addEventListener("click", function (event) {
+                    event.preventDefault();
+                    const fileUrl = this.getAttribute("href");
+                    const fileName = this.getAttribute("data-filename");
+
+                    // Show the popup
+                    downloadPopup.style.display = "block";
+                    filenameText.innerText = fileName; // Set the filename in the popup
+
+                    // Simulate a file download (replace with actual download logic)
+                    const totalFileSize = 1024 * 1024; // Total file size in bytes
+                    let downloadedFileSize = 0; // Initially, no data downloaded
+
+                    const downloadInterval = setInterval(function () {
+                        downloadedFileSize += 1024; // Simulate downloading 1KB of data
+
+                        // Update the progress bar and text
+                        const progressPercentage = (downloadedFileSize / totalFileSize) * 100;
+                        progressBar.style.width = progressPercentage + "%";
+                        progressText.innerText = progressPercentage.toFixed(1) + "%";
+
+                        if (downloadedFileSize >= totalFileSize) {
+                            clearInterval(downloadInterval);
+                            progressText.innerText = "100%";
+
+                            // Initiate the download (replace with your file path)
+                            const anchor = document.createElement("a");
+                            anchor.href = fileUrl;
+                            anchor.download = fileName; // Set the download file name
+                            anchor.style.display = "none";
+                            document.body.appendChild(anchor);
+                            anchor.click();
+                            document.body.removeChild(anchor);
+
+                            // Hide the popup after a delay (e.g., 2 seconds)
+                            setTimeout(function () {
+                                downloadPopup.style.display = "none";
+                            }, 200);
+                        }
+                    }, 1); // Simulate progress update every 0.5 seconds
+                });
+            });
+        });
+    </script>
+</body>
+</html>

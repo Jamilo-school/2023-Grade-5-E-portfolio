@@ -51,6 +51,8 @@ document.querySelectorAll(".link1","link2","link3","link4").forEach(n => n.
 
    }))
 
+   //Audio play when all href tag are clicked starts//
+
    document.addEventListener("DOMContentLoaded", function () {
     const audio = new Audio("./Audio/success.mp3"); // Replace with the path to your sound file
 
@@ -63,7 +65,9 @@ document.querySelectorAll(".link1","link2","link3","link4").forEach(n => n.
     });
   });
 
+   //Audio play when all href tag are clicked end//
 
+//pop up download progress js starts for all a href tags //
   document.addEventListener("DOMContentLoaded", function () {
     const downloadLinks = document.querySelectorAll(".download-link");
     const downloadPopup = document.getElementById("downloadPopup");
@@ -115,4 +119,4 @@ document.querySelectorAll(".link1","link2","link3","link4").forEach(n => n.
         });
     });
 });
-
+//Pop up download progress js ENDS for all a href tags//

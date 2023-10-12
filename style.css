@@ -898,26 +898,28 @@ textarea.input {
 
 
 
-    /* CSS for the popup */
+    /* CSS popup  for download progress  starts*/
     .downloadingpopup {
       display: none;
       border-radius: 20px;
       position: fixed;
-      color: #fff;
+      color: #08571b;
       top: 50%;
       left: 50%;
       transform: translate(-50%, -50%);
       padding: 20px;
-      background: #140aa0;
+      background: linear-gradient(45deg,#2659c9,#13045e);
       box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
       z-index: 9999;
+      
   }
 
   /* CSS for the progress bar */
   .progress-container {
-      background-color: #f0f0f0;
-      border: 1px solid #ccc;
+      background-color: #0d0b63;
+      border: 2px solid #fff;
       height: 20px;
+      border-radius: 20px;
       width: 100%;
       position: relative;
       margin-top: 10px;
@@ -925,11 +927,12 @@ textarea.input {
 
   .progress-bar {
       height: 100%;
-      background-color: #4caf50;
+      background-color: #ffff;
       width: 0;
+      border-radius: 20px;
   }
 
-
+   /* CSS popup  for download progress  ends*/
 
 
 @media (max-width: 850px) {

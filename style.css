@@ -118,8 +118,9 @@ p#nav.text:hover{
 /* navbar  ends*/
 p{
  
-  color: rgb(194, 195, 194);
+  color: rgb(127, 127, 127);
   font-weight: bold;
+  
 
 
   
@@ -153,26 +154,19 @@ a{
 #learnerspic{
   width: 100%;
 }
-#learnersnametag{
-  border: 2px solid #fafafa;
-  padding: 5px;
-  border-radius: 5px;
- 
-}
+
 
 #mrks{
-  border: 3px solid #fafafa;
+  border: 2px solid #fafafa;
   background-color:transparent;
   color: red;
-  padding:8px;
+  padding:8px; border: 4px solid #5fe2f7;
+  line-height: ;
   border-radius: 15px;
   font-size: 12px;
 }
 
-#titledownloads{
-  text-align: center;
-  border: none;
-}
+
 .cbctitle{
   z-index: 1000;
   position: absolute;
@@ -196,16 +190,7 @@ a{
  
   
 }
-#footer{
-  background: linear-gradient(45deg,#e8fffe,#df9233,#5a5625,#000000);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  font-weight: bold;
-  text-align: center;
 
-  
-  
-}
 #developer{
   margin-left: 9px;
   background: linear-gradient(45deg,#0de5da,#5b0e43,#c2b41b,#000000);
@@ -213,26 +198,12 @@ a{
   -webkit-text-fill-color: transparent;
   font-weight: bold;
 }
-.footer{
-  margin-right: 80px;
-}
-.foter{
-  display: grid;
-  grid-template-columns: repeat(2,1fr);
-  color: #fafafafa;
-  text-align: left;
-  
-}
+
+
 #send{
   margin-bottom: 12px;
 }
-#class{
-  border: solid #fafafa;
-  border-style: dashed;
-  max-width: 100%;
-  margin-left: 20px;
-  margin-right: 25px;
-}
+
 
 .input{
   width: 20%;
@@ -284,11 +255,12 @@ width:120px;
   height: 30px;
 }
 
+
 .form-one{
   top: 23px;
   width: 100%;
   max-width: 1200px;
-  background-color: #fff;
+background-image: url(./img/4.png.png);
   border-radius: 10px;
   box-shadow: 0 0 20px 1px rgba(0, 0, 0, 0.1);
   z-index: 1000;
@@ -313,6 +285,7 @@ width:120px;
 .contact-form {
   background-color: #fff;
   position: relative;
+  background-image: url(./img/4.png.png);
 }
 .circle {
   border-radius: 50%;
@@ -378,7 +351,7 @@ form {
   font-size: 2rem;
   line-height: 1;
   margin-bottom: 0.7rem;
-  border: 4px solid #fafafa;
+ 
   border-radius: 15px;
   padding: 5px 5px 5px 5px;
 }
@@ -407,7 +380,7 @@ form {
   width: 100%;
 
   outline: none;
-  border: 8px solid #fafafa;
+  border: 4px solid #fafafa;
   background: none;
   padding: 0.6rem 1.2rem;
   color: #b0adad;
@@ -687,7 +660,7 @@ textarea.input {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  background-color: white;
+  background-image: url(./img/4.png.png);
   padding: 20px;
   border-radius: 5px;
   width: 40%;
@@ -734,9 +707,9 @@ textarea.input {
 .section.one a {
   padding: 0.6rem 1.3rem;
   background-color: #fff;
-  border: 5px solid #fafafa;
+  border: 4px solid #5fe2f7;
   font-size: 0.9rem;
-  color: #1abc9c;
+  color: #4a4485;
   line-height: 1;
   width: 110px;
   border-radius: 25px;
@@ -744,9 +717,7 @@ textarea.input {
   cursor: pointer;
   transition: 0.3s;
   margin: 3px;
-  background: linear-gradient(45deg,#0de5da,#5b0e43,#c2b41b,#000000);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+background-color: transparent;
   text-align: center;
 
   
@@ -908,7 +879,7 @@ textarea.input {
       left: 50%;
       transform: translate(-50%, -50%);
       padding: 20px;
-      background-color: #D1FAE5;
+      background-image: url(./img/4.png.png);
       box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
       z-index: 9999;
       
